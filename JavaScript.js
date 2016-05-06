@@ -80,6 +80,40 @@ while(bool)
 	console.log("Blah me")
 	bool = false;
 }
+
+
+var loopCond = false;
+do
+{
+		console.log(" LOOPING YA'll " + loopCond)
+};
+
+while(loopCond);
+
+// One thing I notice in Javascript, 
+
+//var youHit = Math.floor(Math.random() * 2);
+
+You can't just call youHit, you have to call the whole define variable;
+
+var youHit = Math.floor(Math.random() * 2); // 0 = false and 1 = true;
+var damageThisRound = Math.floor(Math.random() * 5 + 1); // damage between 1 and 5
+
+If you call isNaN on something, it checks to see if that thing is not a number.
+
+switch(color) 
+{
+  case 'red':
+    console.log("Red's a good color!");
+    break;
+}
+
+// It's pretty interesting that switch statements cases are string.
+
+&&, || , !
+
+
+
 */
 
 var country = "America";
