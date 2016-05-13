@@ -57,7 +57,6 @@ must be enter with correct data type;
 
 Functions may have two parameters
 
-
 return keyword = back value that comes out of the function
 
 learned for loops, already know it, I'm good! 
@@ -143,10 +142,53 @@ square.calcPerimeter = function()
   return this.sideLength * 4;
 };
 // help us define an area method here
-
-
 var p = square.calcPerimeter();
 var a = square.calcArea();
+
+
+Custom Constructor
+function Person(name,age) 
+{
+  this.name = name;
+  this.age = age;
+}
+
+var bob = new Person("Bob the Builder", 20);
+
+function Rabbit(adjective) 
+{
+    this.adjective = adjective;
+    this.describeMyself = function() 
+    {
+        console.log("I am a " + this.adjective + " rabbit");
+    };
+}
+
+// now we can easily make all of our rabbits
+var rabbit1 = new Rabbit("fluffy");
+var rabbit2 = new Rabbit("happy");
+var rabbit3 = new Rabbit("sleepy");
+
+// Our person constructor
+function Person (name, age) 
+{
+    this.name = name;
+    this.age = age;
+}
+
+// Now we can make an array of people
+var family = new Array();
+family[0] = new Person("alice", 40);
+family[1] = new Person("bob", 42);
+family[2] = new Person("michelle", 8);
+family[3] = new person("timmy", 6);
+// add the last family member, "timmy", who is 6 years old
+
+Passing Objects into functions 
+
+Object constructor = var bob = new Object();
+Literal constructor = var bob { bob.age: 22, bob.name: "bob"};
+
 
 */
 
