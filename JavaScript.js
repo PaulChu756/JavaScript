@@ -1,10 +1,10 @@
-Code Acadmey
------------------------
-"Paul"
-"Paul".length // Length of your name
-3+4 // adding numbers
-10 * 2 // Multiple
-10/2 // Divide
+//Code Acadmey
+//-----------------------
+//"Paul"
+//"Paul".length // Length of your name
+//3+4 // adding numbers
+//10 * 2 // Multiple
+//10/2 // Divide
 
 // // Javascript comments like this! FREAKING AWESOME!
 
@@ -112,10 +112,44 @@ switch(color)
 
 &&, || , !
 
+-----Objects-----
+var answer = 
+{
+    answer.name: "Blah",
+    answer.age: 21
+}
 
+or 
+
+var answer = new Object();
+answer.name = "Blah";
+answer.age = 21;
+
+rectangle.setHeight = function (newHeight) // Method
+{
+  this.height = newHeight;
+}; // everytime we call this function, we can change the height.
+
+this = this game object
+
+after creating method, use rectangle along with the setHeight to change height or width;
+
+like rectangle.width(8);
+
+var square = new Object();
+square.sideLength = 6;
+square.calcPerimeter = function() 
+{
+  return this.sideLength * 4;
+};
+// help us define an area method here
+
+
+var p = square.calcPerimeter();
+var a = square.calcArea();
 
 */
 
-var country = "America";
+//var country = "America";
 
-console.log(country.substring(0,3)); // Takes elements of the string you desire
+//console.log(country.substring(0,3)); // Takes elements of the string you desire
