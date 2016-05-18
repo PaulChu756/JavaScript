@@ -189,6 +189,18 @@ Passing Objects into functions
 Object constructor = var bob = new Object();
 Literal constructor = var bob { bob.age: 22, bob.name: "bob"};
 
+var bob = 
+{
+    firstName: "Bob",
+    lastName: "Jones",
+    phoneNumber: "(650) 777-777",
+    email: "bob.jones@example.com"
+};
+
+console.log(bob.firstName);
+console.log(bob.lastName);
+console.log(bob.email); // default constructor, can call bob with all properties 
+
 
 */
 
