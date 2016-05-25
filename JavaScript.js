@@ -189,7 +189,6 @@ Passing Objects into functions
 Object constructor = var bob = new Object();
 Literal constructor = var bob { bob.age: 22, bob.name: "bob"};
 
-<<<<<<< HEAD
 new constructor is var nameName = new Book(pages, author);
 
 function Circle (radius) 
@@ -208,7 +207,6 @@ function Circle (radius)
 };
 
 
-=======
 var bob = 
 {
     firstName: "Bob",
@@ -220,7 +218,17 @@ var bob =
 console.log(bob.firstName);
 console.log(bob.lastName);
 console.log(bob.email); // default constructor, can call bob with all properties 
->>>>>>> origin/master
+
+var contacts = [bob, mary];
+console.log(mary.phoneNumber);
+
+var printPerson = function (person)
+{
+    console.log(person.firstName + " " + person.lastName);
+}
+
+ printPerson(contacts[0]);
+ printPerson(contacts[1]);
 
 
 */
