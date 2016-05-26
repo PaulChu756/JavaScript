@@ -229,6 +229,64 @@ var printPerson = function (person)
 
  printPerson(contacts[0]);
  printPerson(contacts[1]);
+ 
+ Forgot you could just do
+ 
+var contacts = [bob, mary];
+
+function printPerson(person) 
+{
+    console.log(person.firstName + " " + person.lastName);
+}
+
+function list() 
+{
+	var contactsLength = contacts.length;
+	
+	for (var i = 0; i < contactsLength; i++) 
+	{
+		printPerson(contacts[i]);
+	}
+}
+
+function search(lastName)
+{
+    var contactsLength = contacts.length;
+    
+    for (var i = 0; i < contactsLength; i++) 
+	{
+		if(contacts[i].lastName === lastName)
+		{
+		    console.log(printPerson(contacts[i]));
+		}
+	}
+}
+
+function add(firstName, lastName, email, phoneNumber)
+{
+    contacts[contacts.length] = 
+    {
+        firstName: firstName,
+        lastName: lastName,
+        phoneNumber: phoneNumber,
+        email: email
+    }
+}
+
+console.log(add("paul", "chu", "lordbabypanda@gmail.com", "337-326-3173"));
+console.log(list());
+
+function Person(job, married, speak) 
+{
+    this.job = job;
+    this.married = married;
+    this.speak = function()
+    {
+        console.log("Hello!");
+    };
+    // add a "speak" method to Person!
+    
+}
 
 
 */
