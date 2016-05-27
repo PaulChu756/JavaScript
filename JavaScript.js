@@ -276,6 +276,8 @@ function add(firstName, lastName, email, phoneNumber)
 console.log(add("paul", "chu", "lordbabypanda@gmail.com", "337-326-3173"));
 console.log(list());
 
+////constructor notation.
+
 function Person(job, married, speak) 
 {
     this.job = job;
@@ -285,7 +287,24 @@ function Person(job, married, speak)
         console.log("Hello!");
     };
     // add a "speak" method to Person!
-    
+}
+
+////literal notation
+
+var bob ()
+{
+    var james = 
+{
+    job: "programmer",
+    married: false,
+    speak: function(mood) 
+    {
+        console.log("Hello, I am feeling " + mood);
+    }
+};
+
+james.speak("great");
+james.speak("just okay");
 }
 
 
